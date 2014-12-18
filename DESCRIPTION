@@ -1,0 +1,10 @@
+Type: Package
+Package: singR
+Title: Write and Sing Songs with R
+Description: Helper functions to generate poems.
+Author: Gergely Daróczi <daroczig@rapporter.net>
+Maintainer: Gergely Daróczi <daroczig@rapporter.net>
+Version: 0.1
+Date: 2014-12-18
+URL: https://github.com/daroczig/singR
+License: GPL (>= 2)
