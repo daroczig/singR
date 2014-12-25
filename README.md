@@ -97,6 +97,10 @@ sing(
 )
 ```
 
+Resulting in:
+
+<img src="demo.gif" width="400px"/>
+
 ## Future
 
 But there's a lot more to do: my idea is to create a reference class for `it` with a function called `give` etc, which will end up in a beautiful, object-oriented R poetry! Or something else.
