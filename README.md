@@ -1,4 +1,4 @@
-% singR: helper functions to "sing" songs with R
+# singR: helper functions to "sing" songs with R
 
 Initially created for [Code Poetry Slam 2.0](http://stanford.edu/~mkagen/codepoetryslam/), where I plan to tribute to the *KC & The Sunshine Band* for [Give It Up](http://www.metrolyrics.com/give-it-up-lyrics-kc-and-the-sunshine-band.html). Yes, this is a fun project -- but I'm happy to merge serious pull requests :)
 
