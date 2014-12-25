@@ -3,5 +3,7 @@
 export(Baby)
 export(give_up)
 export(it)
+export(sing)
 export(verify)
 export(you)
+importFrom(koRpus,hyphen)
