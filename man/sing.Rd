@@ -4,12 +4,14 @@
 \alias{sing}
 \title{Writing a number of syllables on standard output defined by \code{speed} number of seconds}
 \usage{
-sing(text, speed = 4)
+sing(text, speed = 4, language = "en")
 }
 \arguments{
 \item{text}{character vector}
 
 \item{speed}{numeric}
+
+\item{language}{language to be used for finding hyphens (passed to \code{koRpus})}
 }
 \value{
 Nothing is returned, the text is written to \code{stdout}.
