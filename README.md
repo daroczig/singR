@@ -48,6 +48,34 @@ give_up <- function(what, who = '')
 	sprintf('%s give %s up', who, what)
 ```
 
+## Working R code
+
+After loading the `singR` package, the above psuedo-code should work:
+
+```r
+> library(singR)
+> rep(NA, 11)
+ [1] NA NA NA NA NA NA NA NA NA NA NA
+> give_up(what = it, who = Baby)
+[1] "Baby give it up!"
+> give_up(what = it)
+[1] "Give it up!"
+> give_up(what = it, who = Baby)
+[1] "Baby give it up!"
+> rep(NA, 11)
+ [1] NA NA NA NA NA NA NA NA NA NA NA
+> give_up(what = it, who = Baby)
+[1] "Baby give it up!"
+> give_up(what = it)
+[1] "Give it up!"
+> give_up(what = it, who = Baby)
+[1] "Baby give it up!"
+> verify(give_up(what = it, who = you), times = 2)
+[1] "Can you give it up?" "Can you give it up?"
+> give_up(what = it)
+[1] "Give it up!"
+```
+
 ## Future
 
 But there's a lot more to do: my idea is to create a reference class for `it` with a function called `give` etc, which will end up in a beautiful, object-oriented R poetry! Or something else.
