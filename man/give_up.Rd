@@ -15,7 +15,7 @@ give_up(what, who = "")
 string
 }
 \description{
-.. content for \details{} ..
+Generate string saying "give something up"
 }
 \examples{
 give_up('it')
