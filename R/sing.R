@@ -9,7 +9,7 @@ sing <- function(text, speed = 4, language = 'en') {
 
     ## recursive stuff
     if (length(text) > 1)
-        sapply(text, sing, speed = speed)
+        return(invisible(sapply(text, sing, speed = speed)))
 
     ## find syllabus by hyphens
     text <- hyphen(text, hyph.pattern = language, quiet = TRUE)@hyphen[1, 2]
