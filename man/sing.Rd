@@ -2,7 +2,7 @@
 % Please edit documentation in R/sing.R
 \name{sing}
 \alias{sing}
-\title{Writing a number of syllabus on standard output defined by \code{speed} number of seconds}
+\title{Writing a number of syllables on standard output defined by \code{speed} number of seconds}
 \usage{
 sing(text, speed = 4)
 }
@@ -15,6 +15,6 @@ sing(text, speed = 4)
 Nothing is returned, the text is written to \code{stdout}.
 }
 \description{
-Writing a number of syllabus on standard output defined by \code{speed} number of seconds
+Writing a number of syllables on standard output defined by \code{speed} number of seconds
 }
 

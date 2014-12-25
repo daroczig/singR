@@ -76,6 +76,27 @@ After loading the `singR` package, the above psuedo-code should work:
 [1] "Give it up!"
 ```
 
+## Let R sing the song!
+
+Building on the `koRpus` package, we can easily find all the syllables that can be written to the standard output in a timely manner:
+
+```r
+sing(
+    capture.output(
+        rep(NA, 11),
+        give_up(what = it, who = Baby),
+        give_up(what = it),
+        give_up(what = it, who = Baby),
+        rep(NA, 11),
+        give_up(what = it, who = Baby),
+        give_up(what = it),
+        give_up(what = it, who = Baby),
+        verify(give_up(what = it, who = you), times = 2),
+        give_up(what = it)
+    )
+)
+```
+
 ## Future
 
 But there's a lot more to do: my idea is to create a reference class for `it` with a function called `give` etc, which will end up in a beautiful, object-oriented R poetry! Or something else.

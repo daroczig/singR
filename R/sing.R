@@ -1,4 +1,4 @@
-#' Writing a number of syllabus on standard output defined by \code{speed} number of seconds
+#' Writing a number of syllables on standard output defined by \code{speed} number of seconds
 #' @param text character vector
 #' @param speed numeric
 #' @return Nothing is returned, the text is written to \code{stdout}.
