@@ -105,16 +105,16 @@ Resulting in:
 
 Using the following note figures, accompany your rythms with lyrics and hear a beeping sound giving you the rythm:
 
-  w  # whole note
-  wd # whole note, dotted
-  h  # half note
-  hd # half note, dotted
-  q  # quarter note
-  qd # quarter note, dotted
-  e  # eight note
-  ed # eight note, dotted
-  t  # triplet
-  s  # sixteenth note
+- **w**  : whole note  
+- **wd** : whole note, dotted  
+- **h**  : half note  
+- **hd** : half note, dotted  
+- **q**  : quarter note  
+- **qd** : quarter note, dotted  
+- **e**  : eight note  
+- **ed** : eight note, dotted  
+- **t**  : triplet  
+- **s**  : sixteenth note  
 
 ```r
 heyjude <- list()
@@ -124,6 +124,13 @@ heyjude$tempo <- 60
 heyjude$repet <- 8 # I hesitated between this and "Inf"
 
 do.call(what = tap.along, args = heyjude)
+```
+
+```
+NA  NA  NA  NA  NA  NA  NA  NA  NA  NA  NA  Hey  Hey  Jude 
+NA  NA  NA  NA  NA  NA  NA  NA  NA  NA  NA  Hey  Hey  Jude 
+NA  NA  NA  NA  NA  NA  NA  NA  NA  NA  NA  Hey  Hey  Jude 
+(ad infinitum)
 ```
 
 ## Future
