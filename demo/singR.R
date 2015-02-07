@@ -24,3 +24,12 @@ sing(
         give_up(what = it)
     )
 )
+
+# Now using tap.along, let's play the endless chorus from Hey Jude
+heyjude <- list()
+heyjude$lyrics <- c(rep(NA, 11), "Hey", "Hey","Jude")
+heyjude$time.pattn <- "h, q, q, s, s, e, hd, s, s, e, h, s, ed, w"
+heyjude$tempo <- 60
+heyjude$repet <- 8 # I hesitated between this and "Inf"
+
+do.call(what = tap.along, args = heyjude)
