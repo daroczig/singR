@@ -5,7 +5,13 @@
 #' @return Nothing is returned, the text is written to \code{stdout}.
 #' @export
 #' @importFrom beepr beep
-
+#' @examples
+#' heyjude <- list()
+#' heyjude$lyrics <- c(rep(NA, 11), "Hey", "Hey","Jude")
+#' heyjude$time.pattn <- "h, q, q, s, s, e, hd, s, s, e, h, s, ed, w"
+#' heyjude$tempo <- 60
+#' heyjude$repet <- 8 # I hesitated between this and "Inf"
+#' do.call(what = tap.along, args = heyjude)
 tap.along <- function(time.pattn, tempo=60, lyrics=NA, repet=4) {
   require(beepr)
   # Note figures converted to time values according to tempo

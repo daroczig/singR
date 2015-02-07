@@ -19,4 +19,12 @@ Nothing is returned, the text is written to \code{stdout}.
 \description{
 Type lyrics and echo a beep sound along songs defined by four parameters
 }
+\examples{
+heyjude <- list()
+heyjude$lyrics <- c(rep(NA, 11), "Hey", "Hey","Jude")
+heyjude$time.pattn <- "h, q, q, s, s, e, hd, s, s, e, h, s, ed, w"
+heyjude$tempo <- 60
+heyjude$repet <- 8 # I hesitated between this and "Inf"
+do.call(what = tap.along, args = heyjude)
+}
 
