@@ -102,6 +102,20 @@ Resulting in:
 <img src="demo.gif" width="400px"/>
 
 ## bringing rythms to life with tap.along()
+
+Using the following note figures, accompany your rythms with lyrics and hear a beeping sound giving you the rythm:
+
+  w  # whole note
+  wd # whole note, dotted
+  h  # half note
+  hd # half note, dotted
+  q  # quarter note
+  qd # quarter note, dotted
+  e  # eight note
+  ed # eight note, dotted
+  t  # triplet
+  s  # sixteenth note
+
 ```r
 heyjude <- list()
 heyjude$lyrics <- c(rep(NA, 11), "Hey", "Hey","Jude")
