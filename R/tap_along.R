@@ -10,7 +10,7 @@
 #' heyjude$lyrics <- c(rep(NA, 11), "Hey", "Hey","Jude")
 #' heyjude$time.pattn <- "h, q, q, s, s, e, hd, s, s, e, h, s, ed, w"
 #' heyjude$tempo <- 60
-#' heyjude$repet <- 8 # I hesitated between this and "Inf"
+#' heyjude$repet <- 2 # I hesitated between this and "Inf"
 #' do.call(what = tap.along, args = heyjude)
 tap.along <- function(time.pattn, tempo=60, lyrics=NA, repet=4) {
   require(beepr)
