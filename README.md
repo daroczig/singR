@@ -101,6 +101,38 @@ Resulting in:
 
 <img src="demo.gif" width="400px"/>
 
+## bringing rythms to life with tap.along()
+
+Using the following note figures, accompany your rythms with lyrics and hear a beeping sound giving you the rythm:
+
+- **w**  : whole note  
+- **wd** : whole note, dotted  
+- **h**  : half note  
+- **hd** : half note, dotted  
+- **q**  : quarter note  
+- **qd** : quarter note, dotted  
+- **e**  : eight note  
+- **ed** : eight note, dotted  
+- **t**  : triplet  
+- **s**  : sixteenth note  
+
+```r
+heyjude <- list()
+heyjude$lyrics <- c(rep(NA, 11), "Hey", "Hey","Jude")
+heyjude$time.pattn <- "h, q, q, s, s, e, hd, s, s, e, h, s, ed, w"
+heyjude$tempo <- 60
+heyjude$repet <- 8 # I hesitated between this and "Inf"
+
+do.call(what = tap.along, args = heyjude)
+```
+
+```
+NA  NA  NA  NA  NA  NA  NA  NA  NA  NA  NA  Hey  Hey  Jude 
+NA  NA  NA  NA  NA  NA  NA  NA  NA  NA  NA  Hey  Hey  Jude 
+NA  NA  NA  NA  NA  NA  NA  NA  NA  NA  NA  Hey  Hey  Jude 
+(ad infinitum)
+```
+
 ## Future
 
 But there's a lot more to do: my idea is to create a reference class for `it` with a function called `give` etc, which will end up in a beautiful, object-oriented R poetry! Or something else.
